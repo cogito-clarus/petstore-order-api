@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    platform: h2
+  profiles:
+    active: dev
+  jpa:
+    generate-ddl: true
+    hibernate:
+      dialect: org.hibernate.dialect.H2Dialect
+      ddl-auto: create
+
+logging:
+  level:
+    com.cogitoclarus.petstore: DEBUG
+    org.springframework.web.client: DEBUG
+    com.fasterxml.jackson.core: DEBUG
+#show sql statement
+#logging.level.org.hibernate:
+#  SQL: debug
+#show sql values
+#  type.descriptor.sql: trace
+
+server:
+    address: 127.0.0.1
+    port: 4242
+
+product.api.baseUrl:  https://petstoreapp.azurewebsites.net/api/products
