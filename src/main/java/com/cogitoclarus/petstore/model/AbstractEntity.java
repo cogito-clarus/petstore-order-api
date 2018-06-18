@@ -15,7 +15,7 @@ import java.util.Date;
 
 @Data
 @MappedSuperclass
-public abstract class AbstractEntity {
+abstract class AbstractEntity {
 
     @JsonIgnore
     @CreationTimestamp
